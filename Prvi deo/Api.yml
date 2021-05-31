@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Job
+metadata:
+  labels: 
+    app: myapp
+    type: API
+  spec: 
+    containers: 
+      - name: Filip
+      image: image:1.0
+      command: ["python", "Main.py"]
+      restartPolicy: OnFailure
